@@ -1,0 +1,28 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "simple countdown",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "countdown",
+    "time"
+  ],
+  "author": "Artem Ivanov",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Defeatq/countdown.git"
+  },
+  "dependencies": {
+    "countdown-js": "^1.0.2",
+    "js-cookie": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "parcel": "^2.2.1"
+  }
+}
