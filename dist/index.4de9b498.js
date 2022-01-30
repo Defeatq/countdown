@@ -562,7 +562,11 @@ const UI_ELEMENTS = {
     COUNTDOWN_DISPLAY: document.querySelector('.countdown__display')
 };
 function renderTime(timeUnits) {
-    UI_ELEMENTS.COUNTDOWN_DISPLAY.textContent = _dateFns.formatDuration(timeUnits);
+    UI_ELEMENTS.COUNTDOWN_DISPLAY.textContent = _dateFns.formatDuration({
+        ...timeUnits
+    }, {
+        zero: true
+    });
 }
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","date-fns":"9yHCA"}],"gkKU3":[function(require,module,exports) {

@@ -6,5 +6,5 @@ export const UI_ELEMENTS = {
 };
 
 export function renderTime(timeUnits) {
-	UI_ELEMENTS.COUNTDOWN_DISPLAY.textContent = formatDuration(timeUnits);
+	UI_ELEMENTS.COUNTDOWN_DISPLAY.textContent = formatDuration({ ...timeUnits }, { zero: true });
 }
